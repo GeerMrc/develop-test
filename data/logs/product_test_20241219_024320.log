@@ -1,0 +1,22 @@
+2024-12-19 02:43:20 - debug - INFO - ==================================================
+2024-12-19 02:43:20 - debug - INFO - 开始测试时间同步...
+2024-12-19 02:43:20 - debug - INFO - ==================================================
+2024-12-19 02:43:20 - time_sync - DEBUG - TAOBAO Server Time (Local): 2024-12-19 02:43:13
+2024-12-19 02:43:20 - debug - INFO - 服务器时间: 2024-12-19 02:43:13
+2024-12-19 02:43:20 - debug - INFO - 本地时间: 2024-12-19 02:43:20.995074
+2024-12-19 02:43:20 - debug - INFO - 时间偏移: 0.000秒
+2024-12-19 02:43:20 - debug - INFO - 
+==================================================
+2024-12-19 02:43:20 - debug - INFO - 开始测试商品信息获取...
+2024-12-19 02:43:20 - debug - INFO - ==================================================
+2024-12-19 02:43:20 - debug - INFO - 商品URL: https://chaoshi.detail.tmall.com/item.htm?id=20739895092&skuId=4227830352490
+2024-12-19 02:43:20 - debug - INFO - 商品ID: 20739895092
+2024-12-19 02:43:21 - debug - ERROR - 调试过程出错: name 'config' is not defined
+Traceback (most recent call last):
+  File "/Volumes/DISK/playwright-demo/tmall/scripts/debug_product.py", line 131, in debug_product_info
+    html_content = await get_page_content(url, logger)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Volumes/DISK/playwright-demo/tmall/scripts/debug_product.py", line 30, in get_page_content
+    viewport=config.get('browsers.chrome.viewport'),
+             ^^^^^^
+NameError: name 'config' is not defined. Did you mean: 'Config'?

@@ -1,0 +1,38 @@
+{
+  "test_info": {
+    "local_time": "20241218_131150",
+    "server_time": "2024-12-18T13:11:50",
+    "time_offset": 0.0,
+    "debug_file": "data/debug/page_20739895092.html",
+    "result_file": "data/results/product_info_20739895092_20241218_131150.json"
+  },
+  "product_info": {
+    "product_id": "20739895092",
+    "sku_id": "4227830352490",
+    "url": "https://chaoshi.detail.tmall.com/item.htm?id=20739895092&skuId=4227830352490",
+    "title": "飞天53%vol 500ml贵州茅台酒（带杯）白酒酒水",
+    "price_info": {
+      "promotion": "加入购物车",
+      "price": 1499.0,
+      "sales": null
+    },
+    "target_time": "2024/12/18 20:00:00",
+    "timestamp": 1734523200.0,
+    "images": [
+      {
+        "url": "https://img.alicdn.com/imgextra/i3/6000000004067/O1CN01NOqQiA1fujnTHHPr6_!!6000000004067-0-at.jpg",
+        "type": "product",
+        "index": 1,
+        "extract_time": "2024-12-18T13:11:50",
+        "original_url": "https://img.alicdn.com/imgextra/i3/6000000004067/O1CN01NOqQiA1fujnTHHPr6_!!6000000004067-0-at.jpg",
+        "saved_path": "data/images/product_20739895092_1.jpg",
+        "status": "success",
+        "file_size": 384630,
+        "download_time": "0.05s"
+      }
+    ],
+    "server_time": "2024-12-18T13:11:50",
+    "time_offset": 0.0,
+    "local_time": "2024-12-18T13:11:50.927863"
+  }
+}

@@ -1,0 +1,28 @@
+2024-12-19 03:20:27 - debug_webkit - INFO - 运行模式: 有界面
+2024-12-19 03:20:27 - debug_webkit - INFO - ==================================================
+2024-12-19 03:20:27 - debug_webkit - INFO - 使用浏览器: webkit
+2024-12-19 03:20:27 - debug_webkit - INFO - 开始测试时间同步...
+2024-12-19 03:20:27 - debug_webkit - INFO - ==================================================
+2024-12-19 03:20:27 - time_sync - DEBUG - TAOBAO Server Time (Local): 2024-12-19 03:18:54
+2024-12-19 03:20:27 - debug_webkit - INFO - 服务器时间: 2024-12-19 03:18:54
+2024-12-19 03:20:27 - debug_webkit - INFO - 本地时间: 2024-12-19 03:20:27.402324
+2024-12-19 03:20:27 - debug_webkit - INFO - 时间偏移: 0.000秒
+2024-12-19 03:20:27 - debug_webkit - INFO - 
+==================================================
+2024-12-19 03:20:27 - debug_webkit - INFO - 开始测试商品信息获取...
+2024-12-19 03:20:27 - debug_webkit - INFO - ==================================================
+2024-12-19 03:20:27 - debug_webkit - INFO - 商品URL: https://chaoshi.detail.tmall.com/item.htm?id=20739895092&skuId=4227830352490
+2024-12-19 03:20:27 - debug_webkit - INFO - 商品ID: 20739895092
+2024-12-19 03:20:29 - debug_webkit - INFO - 正在加载页面...
+2024-12-19 03:20:30 - debug_webkit - INFO - 页面加载完成
+2024-12-19 03:20:32 - debug_webkit - INFO - 页面网络请求已稳定
+2024-12-19 03:20:50 - debug_webkit - ERROR - 获取页面内容失败: name 'product_config' is not defined
+2024-12-19 03:20:50 - debug_webkit - ERROR - 调试过程出错: name 'product_config' is not defined
+Traceback (most recent call last):
+  File "/Volumes/DISK/playwright-demo/tmall/scripts/debug_product.py", line 169, in debug_product_info
+    html_content = await get_page_content(url, logger, config, browser_type, show)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Volumes/DISK/playwright-demo/tmall/scripts/debug_product.py", line 110, in get_page_content
+    f"screenshot_{product_config['id']}_{browser_type}_{timestamp}.png"
+                  ^^^^^^^^^^^^^^
+NameError: name 'product_config' is not defined. Did you mean: 'browser_config'?

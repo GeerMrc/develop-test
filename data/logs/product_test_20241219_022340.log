@@ -1,0 +1,172 @@
+2024-12-19 02:23:40 - debug - INFO - 检查配置信息...
+2024-12-19 02:23:40 - debug - INFO - 配置文件路径: /Volumes/DISK/playwright-demo/tmall/config/config.yaml
+2024-12-19 02:23:40 - debug - ERROR - 未找到商品配置，请检查配置文件
+2024-12-19 02:23:40 - debug - DEBUG - 当前配置内容: {
+  "browser": {
+    "headless": false,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    }
+  },
+  "urls": {
+    "base": {
+      "taobao": "https://www.taobao.com",
+      "tmall": "https://www.tmall.com",
+      "jd": "https://www.jd.com"
+    },
+    "login": {
+      "entry": "https://login.taobao.com/member/login.jhtml",
+      "check": "https://i.taobao.com/user/baseInfoSet.htm?"
+    },
+    "order": {
+      "confirm": "https://buy.tmall.com/order/confirm_order.htm",
+      "submit": "https://buy.tmall.com/auction/confirm_order.htm"
+    },
+    "product": {
+      "maotai": {
+        "url": "https://chaoshi.detail.tmall.com/item.htm?id=20739895092",
+        "id": "20739895092",
+        "skuId": "4227830352490"
+      }
+    }
+  },
+  "selectors": {
+    "product": {
+      "title": {
+        "xpath": "//h1[contains(@class, 'mainTitle')]",
+        "class": "mainTitle--O1XCl8e2"
+      },
+      "price": {
+        "wrapper": "//div[contains(@class,'PriceModule')]",
+        "promotion": ".//span[contains(@class,'promotion')]",
+        "amount": ".//span[contains(@class,'price')]",
+        "sales": ".//div[contains(@class,'sales')]"
+      },
+      "time": {
+        "pattern": "即将开始，(\\d{1,2}\\.\\d{1,2})\\s+(\\d{1,2}:\\d{2})开售",
+        "xpath": "//div[contains(@class,'countdown')]//span"
+      },
+      "images": {
+        "thumbnails": "img[class*='thumbnail'], img[class*='Thumbnail']",
+        "main_image": "img[class*='mainPic'], img[class*='MainPic']"
+      }
+    }
+  },
+  "monitoring": {
+    "retry": {
+      "count": 3,
+      "interval": 5
+    },
+    "update": {
+      "normal_interval": [
+        45,
+        75
+      ],
+      "urgent_interval": [
+        1,
+        3
+      ],
+      "urgent_threshold": 3600
+    },
+    "time_sync": {
+      "cache_duration": 300,
+      "retry_count": 3,
+      "retry_interval": 1
+    }
+  },
+  "order": {
+    "retry_times": 50,
+    "thread_count": 80,
+    "quantity": 1,
+    "target_time": "2024/01/20 20:00:00"
+  },
+  "storage": {
+    "images": {
+      "path": "data/images",
+      "formats": [
+        "jpg",
+        "webp",
+        "png"
+      ],
+      "quality": 95,
+      "max_size": 10485760
+    }
+  },
+  "paths": {
+    "base": "data",
+    "logs": "data/logs",
+    "images": "data/images",
+    "results": "data/results",
+    "debug": "data/debug"
+  },
+  "logging": {
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    "date_format": "%Y-%m-%d %H:%M:%S",
+    "level": "DEBUG",
+    "file_prefix": "product_test"
+  },
+  "browsers": {
+    "chrome": {
+      "name": "chromium",
+      "headless": true,
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "locale": "zh-CN",
+      "timezone": "Asia/Shanghai",
+      "permissions": [
+        "geolocation"
+      ],
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+        "Cache-Control": "no-cache",
+        "Pragma": "no-cache"
+      }
+    },
+    "firefox": {
+      "name": "firefox",
+      "headless": true,
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "locale": "zh-CN",
+      "timezone": "Asia/Shanghai",
+      "permissions": [
+        "geolocation"
+      ],
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+        "Cache-Control": "no-cache",
+        "Pragma": "no-cache"
+      }
+    },
+    "webkit": {
+      "name": "webkit",
+      "headless": true,
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "locale": "zh-CN",
+      "timezone": "Asia/Shanghai",
+      "permissions": [
+        "geolocation"
+      ],
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+        "Cache-Control": "no-cache",
+        "Pragma": "no-cache"
+      }
+    }
+  }
+}

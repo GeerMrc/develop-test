@@ -1,0 +1,4 @@
+2024-12-19 04:00:57 - test_browser - INFO - 正在加载页面...
+2024-12-19 04:00:58 - test_browser - INFO - 页面加载完成
+2024-12-19 04:00:59 - test_browser - INFO - 页面网络请求已稳定
+2024-12-19 04:01:01 - test_browser - INFO - 页面截图已保存: data/images/screenshot_test_chrome_20241219_040101.png

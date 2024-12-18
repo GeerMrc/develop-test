@@ -1,0 +1,28 @@
+2024-12-19 02:24:14 - debug - INFO - 检查配置信息...
+2024-12-19 02:24:14 - debug - INFO - 配置文件路径: /Volumes/DISK/playwright-demo/tmall/config/config.yaml
+2024-12-19 02:24:14 - debug - INFO - 开始测试时间同步...
+2024-12-19 02:24:14 - time_sync - DEBUG - TAOBAO Server Time (Local): 2024-12-19 02:23:43
+2024-12-19 02:24:14 - debug - INFO - 服务器时间: 2024-12-19 02:23:43
+2024-12-19 02:24:14 - debug - INFO - 本地时间: 2024-12-19 02:24:14.840664
+2024-12-19 02:24:14 - debug - INFO - 时间偏移: 0.00秒
+2024-12-19 02:24:14 - debug - INFO - 
+开始测试商品信息获取...
+2024-12-19 02:24:14 - debug - INFO - 商品URL: https://chaoshi.detail.tmall.com/item.htm?id=20739895092
+2024-12-19 02:24:14 - debug - INFO - 商品ID: 20739895092
+2024-12-19 02:24:14 - product - INFO - 开始获取商品信息
+2024-12-19 02:24:14 - product - ERROR - 获取商品信息失败: 未找到商品配置
+2024-12-19 02:24:14 - debug - ERROR - 调试过程出错: 获取商品信息失败: 未找到商品配置
+Traceback (most recent call last):
+  File "/Volumes/DISK/playwright-demo/tmall/src/core/product.py", line 233, in get_product_info
+    raise ValueError("未找到商品配置")
+ValueError: 未找到商品配置
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Volumes/DISK/playwright-demo/tmall/scripts/debug_product.py", line 78, in debug_product_info
+    product_info = await product_manager.get_product_info(url)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Volumes/DISK/playwright-demo/tmall/src/core/product.py", line 283, in get_product_info
+    raise ProductError(f"获取商品信息失败: {str(e)}")
+src.exceptions.custom_exceptions.ProductError: 获取商品信息失败: 未找到商品配置

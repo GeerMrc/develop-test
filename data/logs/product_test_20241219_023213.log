@@ -1,0 +1,43 @@
+2024-12-19 02:32:13 - debug - INFO - ==================================================
+2024-12-19 02:32:13 - debug - INFO - 开始测试时间同步...
+2024-12-19 02:32:13 - debug - INFO - ==================================================
+2024-12-19 02:32:13 - time_sync - DEBUG - TAOBAO Server Time (Local): 2024-12-19 02:30:26
+2024-12-19 02:32:13 - debug - INFO - 服务器时间: 2024-12-19 02:30:26
+2024-12-19 02:32:13 - debug - INFO - 本地时间: 2024-12-19 02:32:13.486870
+2024-12-19 02:32:13 - debug - INFO - 时间偏移: 0.000秒
+2024-12-19 02:32:13 - debug - INFO - 
+==================================================
+2024-12-19 02:32:13 - debug - INFO - 开始测试商品信息获取...
+2024-12-19 02:32:13 - debug - INFO - ==================================================
+2024-12-19 02:32:13 - debug - INFO - 商品URL: https://chaoshi.detail.tmall.com/item.htm?id=20739895092
+2024-12-19 02:32:13 - debug - INFO - 商品ID: 20739895092
+2024-12-19 02:32:14 - debug - INFO - 正在加载页面...
+2024-12-19 02:32:44 - debug - ERROR - 获取页面内容失败: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://chaoshi.detail.tmall.com/item.htm?id=20739895092", waiting until "networkidle"
+
+2024-12-19 02:32:44 - debug - ERROR - 调试过程出错: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://chaoshi.detail.tmall.com/item.htm?id=20739895092", waiting until "networkidle"
+Traceback (most recent call last):
+  File "/Volumes/DISK/playwright-demo/tmall/scripts/debug_product.py", line 96, in debug_product_info
+    html_content = await get_page_content(url, logger)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Volumes/DISK/playwright-demo/tmall/scripts/debug_product.py", line 34, in get_page_content
+    await page.goto(url, wait_until='networkidle')
+  File "/Users/maric/miniconda3/lib/python3.12/site-packages/playwright/async_api/_generated.py", line 8973, in goto
+    await self._impl_obj.goto(
+  File "/Users/maric/miniconda3/lib/python3.12/site-packages/playwright/_impl/_page.py", line 551, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maric/miniconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py", line 145, in goto
+    await self._channel.send("goto", locals_to_params(locals()))
+  File "/Users/maric/miniconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maric/miniconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://chaoshi.detail.tmall.com/item.htm?id=20739895092", waiting until "networkidle"
+

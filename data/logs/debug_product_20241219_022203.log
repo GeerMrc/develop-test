@@ -1,0 +1,10 @@
+2024-12-19 02:22:03 - debug - INFO - 开始测试时间同步...
+2024-12-19 02:22:03 - debug - ERROR - 调试过程出错: 'TimeSync' object has no attribute '_sync_interval'
+Traceback (most recent call last):
+  File "/Volumes/DISK/playwright-demo/tmall/scripts/debug_product.py", line 47, in debug_product_info
+    offset = product_manager.time_sync.get_time_offset('taobao')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Volumes/DISK/playwright-demo/tmall/src/utils/time_sync.py", line 60, in get_time_offset
+    (now - self._last_sync_time).total_seconds() < self._sync_interval):
+                                                   ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TimeSync' object has no attribute '_sync_interval'

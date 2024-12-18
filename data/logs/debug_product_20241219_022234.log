@@ -1,0 +1,12 @@
+2024-12-19 02:22:34 - debug - INFO - 开始测试时间同步...
+2024-12-19 02:22:34 - debug - INFO - 服务器时间: 2024-12-19 02:21:43
+2024-12-19 02:22:34 - debug - INFO - 本地时间: 2024-12-19 02:22:34.626499
+2024-12-19 02:22:34 - debug - INFO - 时间偏移: 0.00秒
+2024-12-19 02:22:34 - debug - INFO - 
+开始测试商品信息获取...
+2024-12-19 02:22:34 - debug - ERROR - 调试过程出错: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Volumes/DISK/playwright-demo/tmall/scripts/debug_product.py", line 56, in debug_product_info
+    url = product_config['url']
+          ~~~~~~~~~~~~~~^^^^^^^
+TypeError: 'NoneType' object is not subscriptable

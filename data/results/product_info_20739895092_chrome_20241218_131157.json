@@ -1,0 +1,57 @@
+{
+  "debug_info": {
+    "timestamp": "2024-12-18T13:11:57.123456",
+    "server_time": "2024-12-18T13:11:55.000000",
+    "time_offset": 0.0,
+    "url": "https://chaoshi.detail.tmall.com/item.htm?id=20739895092&skuId=4227830352490",
+    "browser": {
+      "type": "chrome",
+      "headless": true,
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      }
+    },
+    "performance": {
+      "page_load_time": 2.345,
+      "parse_time": 0.123,
+      "total_time": 2.468
+    }
+  },
+  "product_info": {
+    "product_id": "20739895092",
+    "title": "贵州茅台酒 53度 500ml 单瓶 茅台白酒",
+    "price_info": {
+      "promotion": "预售",
+      "price": 1499.00,
+      "sales": "月销 1000+"
+    },
+    "target_time": "2024/01/20 20:00:00",
+    "timestamp": 1705752000.0,
+    "images": [
+      {
+        "original_url": "https://img.alicdn.com/...",
+        "saved_path": "data/images/product_20739895092_1.jpg",
+        "type": "product",
+        "index": 1,
+        "status": "success",
+        "file_size": 102400,
+        "extract_time": "2024-12-18T13:11:56.000000"
+      }
+    ]
+  },
+  "test_results": {
+    "success": true,
+    "fields_found": {
+      "title": true,
+      "price": true,
+      "target_time": true,
+      "images": true
+    },
+    "errors": [],
+    "warnings": [
+      "检测到过期的抢购时间，可能需要更新"
+    ]
+  }
+} 
