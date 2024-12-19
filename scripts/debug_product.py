@@ -10,6 +10,7 @@ from src.utils.config import Config
 from src.utils.logger import setup_logger
 from src.utils.browser import BrowserManager
 from src.utils.result_formatter import ResultFormatter
+from src.utils.url_builder import URLBuilder
 
 # 设置配置文件路径
 if not os.environ.get('CONFIG_PATH'):
@@ -22,14 +23,14 @@ def parse_args():
         description='Tmall Taobao Product Information Scraper Tool',
         formatter_class=argparse.RawTextHelpFormatter,
         epilog='''
-  -b, --browser                                            Specify browser type to use {chrome,firefox,webkit} (default: all)
-  --show                                                   Show browser UI (default: headless mode)
+  -b, --browser           Specify browser type to use {chrome,firefox,webkit} (default: all)
+  --show                  Show browser UI (default: headless mode)
 
 Browser Types:
-  chrome                                                   Chrome/Chromium browser
-  firefox                                                  Firefox browser
-  webkit                                                   Safari/WebKit browser
-  all                                                      All supported browsers (default)
+  chrome                  Chrome/Chromium browser
+  firefox                 Firefox browser
+  webkit                  Safari/WebKit browser
+  all                     All supported browsers (default)
 '''
     )
     parser.add_argument('-b', '--browser',
@@ -81,8 +82,13 @@ async def debug_product_info(browser_type='chrome', show=False):
         
         product_config = config.get('urls.product.maotai')
         # 组合完整的商品URL
-        base_url = product_config['url']
-        url = f"{base_url}&skuId={product_config['skuId']}"
+        url = URLBuilder.build_product_url(
+            base_url=product_config['url'],
+            params={
+                'id': product_config['id'],
+                'skuId': product_config['skuId'],
+            }
+        )
         
         logger.info(f"商品URL: {url}")
         logger.info(f"商品ID: {product_config['id']}")
@@ -147,7 +153,7 @@ async def debug_product_info(browser_type='chrome', show=False):
             logger.info("\n" + "=" * 50)
             logger.info("商品信息验证:")
             logger.info("=" * 50)
-            logger.info(f"- 标题: {product_info.get('title')}")
+            logger.info(f"- ���题: {product_info.get('title')}")
             logger.info(f"- 价格: {product_info.get('price_info')}")
             logger.info(f"- 抢购时间: {product_info.get('target_time')}")
             logger.info(f"- 图片数量: {len(product_info.get('images', []))}")

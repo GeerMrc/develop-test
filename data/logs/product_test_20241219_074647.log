@@ -1,0 +1,50 @@
+2024-12-19 07:46:47 - debug_webkit - INFO - 运行模式: 无界面
+2024-12-19 07:46:47 - debug_webkit - INFO - ==================================================
+2024-12-19 07:46:47 - debug_webkit - INFO - 使用浏览器: webkit
+2024-12-19 07:46:47 - debug_webkit - INFO - 开始测试时间同步...
+2024-12-19 07:46:47 - debug_webkit - INFO - ==================================================
+2024-12-19 07:46:48 - time_sync - DEBUG - TAOBAO Server Time (Local): 2024-12-19 07:45:20
+2024-12-19 07:46:48 - debug_webkit - INFO - 服务器时间: 2024-12-19 07:45:20
+2024-12-19 07:46:48 - debug_webkit - INFO - 本地时间: 2024-12-19 07:46:48.812638
+2024-12-19 07:46:48 - debug_webkit - INFO - 时间偏移: 0.000秒
+2024-12-19 07:46:48 - debug_webkit - INFO - 
+==================================================
+2024-12-19 07:46:48 - debug_webkit - INFO - 开始测试商品信息获取...
+2024-12-19 07:46:48 - debug_webkit - INFO - ==================================================
+2024-12-19 07:46:48 - debug_webkit - INFO - 商品URL: https://chaoshi.detail.tmall.com/item.htm?id=20739895092&skuId=4227830352490
+2024-12-19 07:46:48 - debug_webkit - INFO - 商品ID: 20739895092
+2024-12-19 07:46:50 - debug_webkit - INFO - 正在加载页面...
+2024-12-19 07:46:52 - debug_webkit - INFO - 页面加载完成
+2024-12-19 07:46:54 - debug_webkit - INFO - 页面网络请求已稳定
+2024-12-19 07:47:12 - debug_webkit - INFO - 页面截图已保存: data/images/screenshot_20739895092_webkit_20241219_074711.png
+2024-12-19 07:47:12 - debug_webkit - INFO - 页面内容已保存: data/debug/page_20739895092_webkit_20241219_074712.html
+2024-12-19 07:47:13 - time_sync - DEBUG - TAOBAO Server Time (Local): 2024-12-19 07:45:20
+2024-12-19 07:47:13 - product - INFO - 开始提取商品图片 [服务器时间: 2024-12-19 07:45:20]
+2024-12-19 07:47:13 - product - INFO - 找到 1 张商品图片
+2024-12-19 07:47:13 - product - DEBUG - 处理第 1 张图片:
+2024-12-19 07:47:13 - product - DEBUG - - 原�� src: https://img.alicdn.com/imgextra/i3/6000000004067/O1CN01NOqQiA1fujnTHHPr6_!!6000000004067-0-at.jpg_q50.jpg_.webp
+2024-12-19 07:47:13 - product - DEBUG - - placeholder: https://gw.alicdn.com/imgextra/i4/O1CN01CYtPWu1MUBqQAUK9D_!!6000000001437-2-tps-2-2.png
+2024-12-19 07:47:13 - product - DEBUG - ✓ 成功提取图片 1: https://img.alicdn.com/imgextra/i3/6000000004067/O1CN01NOqQiA1fujnTHHPr6_!!6000000004067-0-at.jpg
+2024-12-19 07:47:13 - product - INFO - 成功提取 1 张商品图片
+2024-12-19 07:47:13 - product - INFO - ✓ 已保存: product_20739895092_1.jpg (201.3KB)
+2024-12-19 07:47:13 - product - DEBUG - 提取到商品标题: 飞天53%vol 500ml贵州茅台酒（带杯）白酒酒水
+2024-12-19 07:47:13 - product - DEBUG - 提取到价格信息: {'promotion': '加入购物车', 'price': 1499.0, 'sales': None}
+2024-12-19 07:47:13 - product - DEBUG - 解析得到的时间: 2024/12/19 20:00:00
+2024-12-19 07:47:14 - time_sync - DEBUG - TAOBAO Server Time (Local): 2024-12-19 07:45:20
+2024-12-19 07:47:14 - product - INFO - 商品信息获取成功:
+2024-12-19 07:47:14 - product - INFO - 商品名称: 飞天53%vol 500ml贵州茅台酒（带杯）白酒酒水
+2024-12-19 07:47:14 - product - INFO - 价格信息: {'promotion': '加入购物车', 'price': 1499.0, 'sales': None}
+2024-12-19 07:47:14 - product - INFO - 抢购时间: 2024/12/19 20:00:00
+2024-12-19 07:47:14 - debug_webkit - INFO - 
+调试结果已保存: data/results/product_info_20739895092_webkit_20241219_074714.json
+2024-12-19 07:47:14 - debug_webkit - INFO - 
+==================================================
+2024-12-19 07:47:14 - debug_webkit - INFO - 商品信息验证:
+2024-12-19 07:47:14 - debug_webkit - INFO - ==================================================
+2024-12-19 07:47:14 - debug_webkit - INFO - - 标题: 飞天53%vol 500ml贵州茅台酒（带杯）白酒酒水
+2024-12-19 07:47:14 - debug_webkit - INFO - - 价格: {'promotion': '加入购物车', 'price': 1499.0, 'sales': None}
+2024-12-19 07:47:14 - debug_webkit - INFO - - 抢购时间: 2024/12/19 20:00:00
+2024-12-19 07:47:14 - debug_webkit - INFO - - 图片数量: 1
+2024-12-19 07:47:14 - debug_webkit - INFO - 
+图片保存结果:
+2024-12-19 07:47:14 - debug_webkit - INFO - ✓ data/images/product_20739895092_1.jpg (201.3KB)

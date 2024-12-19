@@ -21,7 +21,8 @@ urls:
   
   product:
     maotai:
-      url: "https://chaoshi.detail.tmall.com/item.htm?id=20739895092"
+      url: "https://chaoshi.detail.tmall.com/item.htm?_u=t2dmg8j26111"
+      platform: "tmall"
       id: "20739895092"
       skuId: "4227830352490"
 

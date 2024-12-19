@@ -1,0 +1,63 @@
+{
+  "metadata": {
+    "timestamp": "2024-12-19T08:00:41.710788",
+    "product_id": "20739895092",
+    "url": "https://chaoshi.detail.tmall.com/item.htm?id=20739895092&skuId=4227830352490&_u=t2dmg8j26111",
+    "test_type": "browser_test"
+  },
+  "browser_info": {
+    "type": "webkit",
+    "headless": true,
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "timing": {
+    "local_time": "2024-12-19T08:00:41.710790",
+    "server_time": "2024-12-19T08:00:17",
+    "time_offset": 0.0,
+    "performance": {
+      "page_load_time": null,
+      "parse_time": null,
+      "total_time": null
+    }
+  },
+  "product_data": {
+    "basic_info": {
+      "title": "飞天53%vol 500ml贵州茅台酒（带杯）白酒酒水",
+      "price": 1499.0,
+      "promotion": "加入购物车",
+      "sales": null
+    },
+    "timing": {
+      "target_time": "2024/12/19 20:00:00",
+      "timestamp": 1734609600.0
+    },
+    "resources": {
+      "images": [
+        {
+          "index": 1,
+          "type": "product",
+          "status": "success",
+          "original_url": "https://img.alicdn.com/imgextra/i3/6000000004067/O1CN01NOqQiA1fujnTHHPr6_!!6000000004067-0-at.jpg",
+          "saved_path": "data/images/product_20739895092_1.jpg",
+          "file_size": "201.3KB",
+          "extract_time": "2024-12-19T08:00:17"
+        }
+      ]
+    }
+  },
+  "test_results": {
+    "success": true,
+    "fields_found": {
+      "title": true,
+      "price": true,
+      "target_time": true,
+      "images": true
+    },
+    "errors": [],
+    "warnings": []
+  }
+}
